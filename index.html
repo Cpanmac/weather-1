@@ -1,8 +1,34 @@
 <!DOCTYPE html>
-<html>
+<html lang="zh-cmn-Hans">
   <head>
     <meta charset="utf-8">
     <title>weather</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1, maximum-scale=3, minimum-scale=1, user-scalable=no">
+    <script>
+      /* eslint-disable */
+      !function(){
+        function RemRelativeFontSize(designWidth) {
+          this.designWidth = designWidth || 750;
+          this.html = document.documentElement;
+          this.setHtmlFontSize();
+
+          var that = this;
+          var timeout = null;
+          window.addEventListener('resize', function () {
+            clearTimeout(timeout);
+            timeout = setTimeout(function(){
+              that.setHtmlFontSize();
+            },250)
+          })
+        }
+        RemRelativeFontSize.prototype = {
+          setHtmlFontSize: function () {
+            this.html.style.fontSize = window.innerWidth / this.designWidth * 100 + 'px';
+          }
+        };
+        var setFontSize = new RemRelativeFontSize(375);
+      }()
+    </script>
   </head>
   <body>
     <div id="app"></div>
