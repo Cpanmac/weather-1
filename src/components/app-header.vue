@@ -81,8 +81,7 @@
 
 <style lang="stylus">
 @require '../style/rider'
-
-$height-app-header = .5rem;
+@require '../style/variable.styl'
 
 .app-header
   position: fixed
