@@ -8,7 +8,7 @@
 </template>
 
 <style lang="stylus">
-@require '../style/variable.styl'
+@require '../assets/style/variable.styl'
 
 .weather-info
   padding: $height-app-header + .7rem 0 1rem
@@ -37,7 +37,7 @@
   display: inline-block
   width: .18rem
   height: .18rem
-  background-image: url('../../static/icon-aqi.svg')
+  background-image: url('../assets/img/icon/icon-aqi.svg')
   background-repeat: no-repeat
   background-size: contain
   background-position: center

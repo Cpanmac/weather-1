@@ -80,8 +80,8 @@
 </script>
 
 <style lang="stylus">
-@require '../style/rider'
-@require '../style/variable.styl'
+@require '../assets/style/rider'
+@require '../assets/style/variable.styl'
 
 .app-header
   position: fixed
@@ -99,7 +99,7 @@
   width: $height-app-header
   height: $height-app-header
   display: block
-  background-image: url('../../static/icon-header-menu.svg')
+  background-image: url('../assets/img/icon/icon-header-menu.svg')
   background-size: .25rem
   background-repeat: no-repeat
   background-position: center

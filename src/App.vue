@@ -16,7 +16,7 @@ export default {
 </script>
 
 <style lang="stylus">
-@require 'style/rider'
+@require 'assets/style/rider'
 /*normalize()*/
 initialize()
 body
